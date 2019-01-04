@@ -61,4 +61,4 @@ const myReduce = (array, callback, start) => {
     return total;
 }
 
-console.log(myReduce([1,2,3], (x,y) => x + y));
+console.log(myReduce([1,2,3], (x,y) => x + y, 5));
