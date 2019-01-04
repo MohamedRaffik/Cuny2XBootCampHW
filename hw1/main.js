@@ -52,13 +52,13 @@ console.log(myEvery([1,2,3], (x) => x % 2 === 0))
 
 // reduce() dupe
 const myReduce = (array, callback, start) => {
-    let start_index;
-    if (start) { total = start; start_index = 0; }
-    else { total = (array.length > 0) ? array[0] : null; start_index = 1; }
-    for (let i = start_index; i < array.length; i++) {
+    let total;
+    if (start) { total = start; }
+    else if (array.length > 0) { total = array[0]; array = array.splice(1); }
+    for (let i = 0; i < array.length; i++) {
         total = callback(total, array[i], i, array);
     }
     return total;
 }
 
-console.log(myReduce([1,2,3], (x,y) => x + y, 7));
+console.log(myReduce([1,2,3], (x,y) => x + y, 5));
