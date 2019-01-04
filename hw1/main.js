@@ -23,7 +23,7 @@ console.log(myMap([1,2,3], (x) => x + 2))
 const myFilter = (array, callback) => {
     let new_array = [];
     for (let i = 0; i < array.length; i++) {
-        (callback(array[i], i, array)) ? new_array.push(array[i]) : null;
+        if (callback(array[i], i, array)) { new_array.push(array[i]); }
     }
     return new_array;
 }
