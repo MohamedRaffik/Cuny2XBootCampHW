@@ -9,7 +9,7 @@ class Decrement extends React.Component {
 		this.state = {
 			num: this.props.startnum
 		};
-	}
+  }
 
 	DecrementNumber() {
 		if (this.state.num === 0) { 
