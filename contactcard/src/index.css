@@ -3,12 +3,11 @@
 }
 
 .cardDisplay {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: inline;
 }
 
 .card {
+	display: inline-block;
 	margin: 10px;
 	border: 1px black solid;
 }
