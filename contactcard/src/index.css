@@ -1,0 +1,22 @@
+.title {
+	text-align: center;
+}
+
+.cardDisplay {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin: 10px;
+	border: 1px black solid;
+}
+
+.card th {
+	text-align: left;
+}
+
+.card th, .card td {
+	padding: 10px;
+}
