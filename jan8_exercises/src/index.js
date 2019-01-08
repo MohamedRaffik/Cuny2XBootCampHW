@@ -6,7 +6,7 @@ import FolderContents from './components/FolderContents';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="flex-col">
         <h1>Form Edit</h1>
         <FormEdit />
         <h1>Folder Contents</h1>
