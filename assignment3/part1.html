@@ -1,0 +1,26 @@
+<!-- 
+    Question 1
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="argue">
+            <h1>Arguing Buttons</h1>
+                <button id="argue-1">Button 1</button>
+                <button id="argue-2">Button 2</button>
+            <p id="argue-text"></p>
+        </div>
+        <script>
+            document.getElementById("argue-1").addEventListener("click", function() {
+                document.getElementById("argue-text").innerHTML = "I'm right"; 
+            });
+            document.getElementById("argue-2").addEventListener("click", function() {
+                document.getElementById("argue-text").innerHTML = "No, I'm right"; 
+            });
+        </script>
+    </body>
+</html>
